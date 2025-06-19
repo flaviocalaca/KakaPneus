@@ -156,6 +156,35 @@ textarea {
   background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
   transition: visibility 1s ease-in-out;
 }
+@media (max-width: 1300px) {
+  .container-principal {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .Logo-kaka {
+    height: 150px;
+  }
+  .Ze-rodinha {
+    height: 300px;
+  }
+  button {
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .header img {
+  display: none;
+  }
+  .header a {
+    font-size: 18px;
+  }
+  .header {
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 
 /* inicial 
