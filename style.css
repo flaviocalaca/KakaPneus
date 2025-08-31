@@ -156,7 +156,7 @@ textarea {
   background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
   transition: visibility 1s ease-in-out;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1080px) {
   .container-principal {
     flex-direction: column;
     align-items: center;
