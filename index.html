@@ -7,14 +7,13 @@
     <title>Kaka Pneus</title>
   </head>
   <body>
-    <div class="mascara-formulario" onclick="fecharForm()"></div>
-    <div class="header">
+    <header class="header">
       <img src="./assest/zerodinha.png" />
-      <a>Home</a>
-      <a href="nossos-servicos.html">Nossos Serviços</a>
-      <a onclick="mostrarForm()">Fale Conosco</a>
-    </div>
-    <div class="container-principal">
+      <a href="#header">Home</a>
+      <a href="#nossos-servicos">Nossos Serviços</a>
+      <a href="#fale-conosco">Fale Conosco</a>
+    </header>
+    <main class="container-principal">
       <div class="container">
         <img class="Logo-kaka" src="./assest/logo.png" alt="Kaka Pneus Logo" />
         <h1>Bem-vindo à Kaka Pneus</h1>
@@ -28,7 +27,7 @@
           alt="Mascote Kaka"
         />
       </div>
-    </div>
+    </main>
 
     <div class="Caixa-video">
       <video src="./assest/Víde0 kaka.mp4" autoplay loop muted></video>
@@ -39,16 +38,149 @@
     >
       <img src="./assest/whatsapp.png" alt="WhatsApp" class="whatsapp-icon" />
     </a>
-    <form 
-      class="formulario-fale-conosco"  
-      action="https://formcarry.com/s/VGtBdEzCfoe"
-      method="POST" 
-      enctype="multipart/form-data">
-        <input placeholder="Nome" type="text" name="Nome"/>
-        <input placeholder="Seu Celular" type="tel" name="telefonetype="text" name="mone""/>
-        <textarea placeholder="Mensagem" name="duvida"></textarea>
-        <button type="submit">Pedir Orçamento</button>
-    </form>
+    <section class="nossos-servicos" id="nossos-servicos">
+      <div class="servicos-container">
+        <h2>Nossos Serviços</h2>
+        <div class="servicos-grid">
+          <div class="card-servico">
+            <div class="card-imagem">
+              <img src="./assest/Pneus.jpg" alt="Pneus Novos" />
+            </div>
+            <div class="card-conteudo">
+              <h3>Pneus Novos</h3>
+              <p>
+                Oferecemos uma ampla variedade de pneus novos para todos os
+                tipos de veículos.
+              </p>
+            </div>
+          </div>
+          <div class="card-servico">
+            <div class="card-imagem">
+              <img src="./assest/troca de oleo.jpg" alt="Pneus Usados" />
+            </div>
+            <div class="card-conteudo">
+              <h3>Troca de Oleo</h3>
+              <p>Encontre o melhor oleo para o seu veículo.</p>
+            </div>
+          </div>
+          <div class="card-servico">
+            <div class="card-imagem">
+              <img
+                src="./assest/Alinhamento.jpg"
+                alt="Alinhamento e Balanceamento"
+              />
+            </div>
+            <div class="card-conteudo">
+              <h3>Alinhamento e Balanceamento</h3>
+              <p>
+                Serviços profissionais para garantir a segurança e o desempenho
+                do seu veículo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contato-localizacao" id="contato-localizacao">
+      <div class="fale-conosco-container">
+        <h2>Entre em Contato</h2>
+        <p>
+          Preencha o formulário abaixo e envie sua mensagem direto para o
+          WhatsApp
+        </p>
+        <form
+          class="formulario-fale-conosco"
+          id="formulario-whatsapp"
+          onsubmit="enviarWhatsApp(event)"
+        >
+          <input
+            id="nome"
+            placeholder="Nome"
+            type="text"
+            name="Nome"
+            required
+          />
+          <input
+            id="telefone"
+            placeholder="Seu Celular"
+            type="tel"
+            name="Telefone"
+            required
+          />
+          <textarea
+            id="mensagem"
+            placeholder="Mensagem"
+            name="Mensagem"
+            required
+          ></textarea>
+          <button type="submit">Pedir Orçamento</button>
+        </form>
+      </div>
+
+      <div class="fale-conosco-container">
+        <h2>Nossa Localização</h2>
+        <p>Visite-nos em nossa loja e conheça nossos produtos e serviços</p>
+        <div class="localizacao-info">
+          <div class="info-item">
+            <h3>📍 Endereço</h3>
+            <p>Rua Principal, 123<br />Centro - Fortaleza, CE<br />60000-000</p>
+          </div>
+          <iframe
+            class="mapa-google"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.6779999999997!2d-38.527!3d-3.731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74e2c2c2c2c2c7%3A0x1c1c1c1c1c1c1c!2sRua%20Principal%2C%20123%20-%20Centro%2C%20Fortaleza%20-%20CE!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+            width="100%"
+            height="300"
+            style="border: none; border-radius: 6px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>📍 Localização</h3>
+          <p>Rua Principal, 123<br />Centro - Fortaleza, CE<br />60000-000</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>📞 Contato</h3>
+          <p>
+            <a href="tel:+5588997136790">(88) 9971-3679</a><br />
+            <a href="mailto:contato@kakapneus.com">contato@kakapneus.com</a>
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h3>🔗 Redes Sociais</h3>
+          <div class="redes-sociais">
+            <a href="https://wa.me/5588997136790" target="_blank" title="WhatsApp">
+              <svg width="1.5rem" height="1.5rem" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.272-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004c-1.025 0-2.04-.313-2.923-.903C8.368 5.387 7.554 4.557 7.554 3.159c0-1.583 1.289-2.872 2.872-2.872 1.582 0 2.871 1.289 2.871 2.872 0 1.398-.814 2.228-1.998 3.077-.883.59-1.898.903-2.923.903m5.968 9.75H6.465c-1.582 0-2.872-1.289-2.872-2.872V6.031C3.593 4.449 4.882 3.16 6.465 3.16h5.009c1.582 0 2.871 1.289 2.871 2.871v12.844c0 1.583-1.289 2.872-2.871 2.872"/>
+              </svg>
+            </a>
+            <a href="https://instagram.com/kakapneus" target="_blank" title="Instagram">
+              <svg width="1.5rem" height="1.5rem" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.322a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
+              </svg>
+            </a>
+            <a href="https://facebook.com/kakapneus" target="_blank" title="Facebook">
+              <svg width="1.5rem" height="1.5rem" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kaka Pneus. Todos os direitos reservados.</p>
+      </div>
+    </footer>
   </body>
 
   <script src="./scripts.js"></script>
