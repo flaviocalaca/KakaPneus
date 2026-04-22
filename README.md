@@ -12,7 +12,7 @@ O site apresenta informações sobre os serviços oferecidos, formas de contato.
 <br>
 
 <p align="center">
-  <img alt="projeto Kaka Pneus" src="https://github.com/flaviocalaca/KakaPneus/blob/main/assest/Imagem%20para%20Readme.png" width="100%">
+  <img alt="projeto Kaka Pneus" src="https://github.com/flaviocalaca/KakaPneus/blob/main/assets/Imagem%20para%20Readme.png" width="100%">
 </p>
 <br>
 🚀 Tecnologias
